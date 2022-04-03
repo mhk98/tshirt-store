@@ -2,6 +2,7 @@ import React from 'react';
 import Brother from '../Brother/Brother';
 import MySelf from '../MySelf/MySelf';
 import Sister from '../Sister/Sister';
+import './Father.css'
 
 
 const Father = ({house}) => {
@@ -9,7 +10,7 @@ const Father = ({house}) => {
         <div>
             <h2>Father</h2>
             <p>House:{house}</p>
-            <div style={{disply:'flex'}}>
+            <div className='father'>
             <MySelf house={house}></MySelf>
             <Brother house={house}></Brother>
             <Sister house={house}></Sister>

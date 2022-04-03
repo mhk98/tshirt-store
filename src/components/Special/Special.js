@@ -1,14 +1,13 @@
 import React, { useContext } from 'react';
 import { RingContext } from '../Grandpa/Grandpa';
 
-const Aunty = ({house}) => {
+const Special = () => {
     const ring = useContext(RingContext)
     return (
         <div>
-            <h2>Aunty</h2>
-            <p>House:{house}{ring}</p>
+            <h5>{ring}</h5>
         </div>
     );
 };
 
-export default Aunty;
+export default Special;
